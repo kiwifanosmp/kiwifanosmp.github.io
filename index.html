@@ -3,33 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>В разработке...</title>
+    <title>Qiwi Fan</title>
     <style>
+        /* Стили для страницы */
         body {
+            background-image: url("img/fon.png"); /* Установка фона */
+            background-size: cover; /* Фон будет заполнять всю страницу */
+            background-repeat: no-repeat; /* Фон не повторяется */
             font-family: Arial, sans-serif;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
+            justify-content: center;
             height: 100vh;
             margin: 0;
-            background-color: #f4f4f9;
+            padding: 0;
         }
-        .container {
-            text-align: center;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
         }
-        .container p {
+
+        .logo {
             font-size: 24px;
-            color: #555;
+            color: #333;
+            text-align: center;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            width: 300px;
+            height: 80px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .button img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+        }
+
+        .mascot {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 200px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <p>В разработке...</p>
+    <!-- Логотип и текст о сайте -->
+    <div class="logo-container">
+        <div class="logo">
+            <img src="img/qiwifan.png" alt="Qiwi Logo">
+            <span>QIWI<br>FAN</span>
+        </div>
+        <p style="font-size: 16px;">Это официальный сайт Telegram-канала <strong>@osmpqiwi</strong></p>
     </div>
+
+    <!-- Кнопки (с использованием только изображений) -->
+    <div class="button-container">
+        <!-- Кнопка "Локальные оболочки" -->
+        <a href="main1.html" class="button">
+            <img src="img/local-osmp.png" alt="Локальные оболочки">
+        </a>
+
+        <!-- Кнопка "Онлайн терминалы" -->
+        <a href="main2.html" class="button">
+            <img src="img/online-osmp.png" alt="Онлайн терминалы">
+        </a>
+    </div>
+
+    <!-- Маскот -->
+    <img src="img/mackot.png" alt="Маскот" class="mascot">
+
 </body>
 </html>
